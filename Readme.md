@@ -31,7 +31,8 @@ A Redis client is required. An existing client can be passed directly using the 
 - `host` Redis server hostname
 - `port` Redis server portno
 - `socket` Redis server unix_socket
-- `url` Redis server url
+- `url` primary Redis server url
+- `secondaryUrl` secondary Redis server url - used too lookup for session if not in primary. if in secondary save to primary
 
 The following additional params may be included:
 
